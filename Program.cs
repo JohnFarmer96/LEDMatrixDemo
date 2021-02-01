@@ -8,12 +8,12 @@ namespace LEDMatrixDemo
     {
         static int Main(string[] args)
         {
-            while(true)
-            {
-                Console.WriteLine("waiting for debugger to attach...");
-                if (Debugger.IsAttached) break;
-                System.Threading.Thread.Sleep(1000);
-            }
+            //while(true)
+            //{
+            //    Console.WriteLine("waiting for debugger to attach...");
+            //    if (Debugger.IsAttached) break;
+            //    System.Threading.Thread.Sleep(1000);
+            //}
 
             var options = new RGBLedMatrixOptions
             {
