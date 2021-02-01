@@ -12,4 +12,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="DLLs\librgbmatrix.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
