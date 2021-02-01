@@ -8,7 +8,8 @@ namespace LEDMatrixDemo
     {
         static int Main(string[] args)
         {
-            //while(true)
+            Console.WriteLine("Program started");
+            //while (true)
             //{
             //    Console.WriteLine("waiting for debugger to attach...");
             //    if (Debugger.IsAttached) break;
@@ -25,8 +26,11 @@ namespace LEDMatrixDemo
                 LimitRefreshRateHz = 60
             };
 
+            Console.WriteLine("Starting to initialize Matrix");
             var matrix = new RGBLedMatrix(options);
             var canvas = matrix.CreateOffscreenCanvas();
+
+            Console.WriteLine("Starting Visualization");
 
             for (var i = 0; i < 1000; ++i)
             {
@@ -42,7 +46,7 @@ namespace LEDMatrixDemo
                 //canvas.DrawLine(canvas.Width / 2 - 3, canvas.Height / 2 - 3, canvas.Width / 2 + 3, canvas.Height / 2 + 3, new Color(0, 0, 255));
                 //canvas.DrawLine(canvas.Width / 2 - 3, canvas.Height / 2 + 3, canvas.Width / 2 + 3, canvas.Height / 2 - 3, new Color(0, 0, 255));
 
-                //canvas = matrix.SwapOnVsync(canvas);
+                canvas = matrix.SwapOnVsync(canvas);
             }
 
             Console.WriteLine("Done.");
