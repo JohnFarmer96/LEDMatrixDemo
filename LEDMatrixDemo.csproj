@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DLLs\librgbmatrix.so">
+    <None Update="libhostfxr.so">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="librgbmatrix.so">
