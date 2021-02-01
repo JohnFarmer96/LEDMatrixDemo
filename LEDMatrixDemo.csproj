@@ -8,15 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="libhostfxr.so" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="RGBLedMatrix">
       <HintPath>DLLs\RGBLedMatrix.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="libhostfxr.so">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="librgbmatrix.so">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
