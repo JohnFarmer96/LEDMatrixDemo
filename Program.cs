@@ -31,7 +31,7 @@ namespace LEDMatrixDemo
             var canvas = matrix.CreateOffscreenCanvas();
 
             Console.WriteLine("Starting Visualization");
-            canvas.Fill(new Color(100, 100, 100));
+            canvas.SetPixel(0, 0, new Color(100, 100, 100));
 
             //for (var i = 0; i < 1000; ++i)
             //{
